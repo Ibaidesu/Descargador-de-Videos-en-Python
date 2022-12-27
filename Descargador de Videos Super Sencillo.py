@@ -8,7 +8,8 @@ video = yt.streams.filter(progressive=True, file_extension='mp4').order_by('reso
 # Descarga el video en la carpeta actual
 video.download()
 
+print('¡Tu video ya esta descargado!')
+
 # También puedes especificar una ruta de descarga diferente
 video.download('Aqui Pones Donde quieres que te lo descargue')
 
-print('Tu video ya esta descargado')
